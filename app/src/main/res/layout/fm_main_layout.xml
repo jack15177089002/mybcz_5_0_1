@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.client.p029fm.view.FmView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/fm_view" android:background="?attr/color_common_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.baicizhan.client.p029fm.view.PullableFmLine android:id="@+id/fm_pullable_fmline" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" app:ptrHeaderBackground="#00000000" app:ptrMode="both" app:ptrAnimationStyle="flip"/>
+    <include layout="@layout/fm_controller"/>
+    <com.baicizhan.client.business.view.RotatingImageView android:id="@+id/fm_load_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_dots_normal_default" android:layout_centerInParent="true"/>
+    <include layout="@layout/advertisement_layout"/>
+</com.baicizhan.client.p029fm.view.FmView>

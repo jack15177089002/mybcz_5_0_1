@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/indicator" android:layout_width="25dp" android:layout_height="25dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/state_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.baicizhan.client.business.widget.CircleProgressView android:id="@+id/progress" android:layout_width="25dp" android:layout_height="25dp" app:strokeWidth="2dp" app:circleRadius="10dp" app:circleBackgroundColor="?attr/color_progress_bg" app:circleProgressColor="?attr/color_progress" app:centerSquareWidth="6dp"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/T1" android:textColor="?attr/color_button_oval" android:gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false"/>
+</merge>

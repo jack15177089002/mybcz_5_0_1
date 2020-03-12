@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ProgressBar android:id="@+id/pbLoad" android:layout_width="match_parent" android:layout_height="3dp" android:progress="0" android:progressDrawable="@drawable/wordtesting_load_progress_style" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/ivSystemAuto" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/wordtesting_welcome_msg_system_auto"/>
+            <ImageView android:id="@+id/ivUserSelect" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/wordtesting_welcome_msg_user_select"/>
+            <LinearLayout android:background="@color/wordtesting_common_blue" android:padding="2dp" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这大概会花掉您"/>
+                <TextView android:textColor="@color/wordtesting_common_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="三分钟"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间"/>
+            </LinearLayout>
+            <TextView android:gravity="right" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="但是有助于我们为您智能安排学习材料哦~"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.baicizhan.client.wordtesting.view.CommonButton android:textColor="@color/wordtesting_common_blue" android:id="@+id/btnBye" android:background="@drawable/wordtesting_common_button" android:layout_width="match_parent" android:layout_height="55dp" android:text="我还有事先走了" android:layout_weight="1"/>
+                <LinearLayout android:layout_width="10dp" android:layout_height="wrap_content"/>
+                <Button android:textColor="@color/wordtesting_common_white" android:id="@+id/btnGoTesting" android:background="@drawable/wordtesting_score_button" android:layout_width="match_parent" android:layout_height="55dp" android:text="来嘛WHO怕WHO" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/T9" android:gravity="center_horizontal" android:id="@+id/topic_word" android:layout_width="match_parent" android:layout_height="wrap_content" android:soundEffectsEnabled="false"/>
+    <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_text_mediabar" android:gravity="center" android:id="@+id/topic_etyma" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <TextView android:textSize="@dimen/T5" android:textColor="?attr/color_button_text_mediabar" android:gravity="center" android:id="@+id/topic_phonetic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <View android:id="@+id/hint_divider" android:background="?attr/color_button_oval" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="8dp" android:layout_marginTop="16dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp"/>
+    <ViewAnimator android:orientation="vertical" android:id="@+id/hint_switcher" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/T4" android:textColor="?attr/color_text_review" android:id="@+id/topic_sentence" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/T4" android:textColor="?attr/color_text_review" android:id="@+id/topic_mean_en" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/T4" android:textColor="?attr/color_text_review" android:id="@+id/topic_mean_cn" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ViewAnimator>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <LinearLayout android:orientation="vertical" android:id="@+id/picker_table" android:background="?attr/color_plan_date_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+        <LinearLayout android:id="@+id/picker_title" android:layout_width="match_parent" android:layout_height="48dp" android:baselineAligned="false">
+            <TextView android:textSize="@dimen/T4" android:textColor="?attr/color_button_text_mediabar" android:gravity="center" android:id="@+id/picker_day_count" android:layout_width="0dp" android:layout_height="match_parent" android:text="完成天数" android:layout_weight="1"/>
+            <View android:background="?attr/color_bar_text" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/T4" android:textColor="?attr/color_button_text_mediabar" android:gravity="center" android:id="@+id/picker_word_count" android:layout_width="0dp" android:layout_height="match_parent" android:text="每天背单词" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="?attr/color_bar_text" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <kankan.wheel.widget.WheelView android:layout_gravity="center" android:id="@+id/day_count_picker" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <View android:background="?attr/color_bar_text" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <kankan.wheel.widget.WheelView android:layout_gravity="center" android:id="@+id/word_count_picker" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp">
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_common_white" android:gravity="center" android:id="@+id/daily_consume_time" android:background="?attr/drawable_thinking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每天大约花5分钟"/>
+        <ImageView android:id="@+id/status" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginLeft="-40dp" android:layout_marginTop="-20dp" android:src="@drawable/bao_status1_normal_default" android:layout_toRightOf="@+id/daily_consume_time" android:layout_below="@+id/daily_consume_time"/>
+    </RelativeLayout>
+</LinearLayout>

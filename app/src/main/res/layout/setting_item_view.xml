@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="45dp">
+    <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/T1" android:textColor="?attr/color_button_text" android:id="@+id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/label" android:layout_alignBaseline="@+id/label"/>
+    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/switcher" android:layout_width="50dp" android:layout_height="25dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:onColor="?attr/color_button_mail_login" app:offColor="?attr/color_button_text_mediabar" app:thumbColor="?attr/color_common_white" app:thumbPressedColor="?attr/color_common_white"/>
+</RelativeLayout>

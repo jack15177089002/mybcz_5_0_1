@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.client.video.view.VideoView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/video_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textColor="#ffd6d6d6" android:gravity="center" android:id="@+id/video_loading" android:background="#ff000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/video_loading" android:layout_centerInParent="true"/>
+    <View android:id="@+id/video_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/video_navigation_bar"/>
+    <include layout="@layout/video_play_controller"/>
+    <ListView android:id="@+id/video_play_list" android:background="#e8000000" android:fadingEdge="none" android:layout_width="130dp" android:layout_height="match_parent" android:layout_marginTop="35dp" android:layout_marginBottom="50dp" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0dp" android:choiceMode="singleChoice" android:layout_alignParentRight="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/video_info_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_marginBottom="50dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_common_white" android:id="@+id/video_info" android:background="@drawable/bg_blue_normal_default" android:padding="10dp" android:layout_width="175dp" android:layout_height="70dp" android:text="@string/video_info_tip"/>
+        <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:src="@drawable/triangle_blue_down_normal_default"/>
+    </LinearLayout>
+</com.baicizhan.client.video.view.VideoView>

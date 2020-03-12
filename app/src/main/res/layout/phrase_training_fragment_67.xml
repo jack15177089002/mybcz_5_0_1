@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="35dp">
+        <TextView android:textSize="@dimen/T9" android:textColor="?attr/color_list_text2" android:gravity="center" android:layout_gravity="center" android:id="@+id/phrase_training_word" android:layout_width="0dp" android:layout_height="match_parent" android:text="cut out" android:layout_weight="1"/>
+        <com.baicizhan.main.customview.FixedGridLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" android:layout_weight="1" app:numOfColumns="2" app:numOfRows="2" app:verticalSpacing="4dp" app:horizontalSpacing="4dp" app:cellWidthWeight="1" app:cellHeightWeight="1">
+            <FrameLayout android:id="@+id/phrase_training_opt_0" android:layout_width="0dp" android:layout_height="0dp">
+                <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/phrase_training_img_0" android:padding="4.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:autoRecycle="true"/>
+                <ImageView android:id="@+id/phrase_training_tag_0" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wrong_big_normal_default" android:scaleType="center"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/phrase_training_opt_1" android:layout_width="0dp" android:layout_height="0dp">
+                <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/phrase_training_img_1" android:padding="4.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:autoRecycle="true"/>
+                <ImageView android:id="@+id/phrase_training_tag_1" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wrong_big_normal_default" android:scaleType="center"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/phrase_training_opt_2" android:layout_width="0dp" android:layout_height="0dp">
+                <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/phrase_training_img_2" android:padding="4.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:autoRecycle="true"/>
+                <ImageView android:id="@+id/phrase_training_tag_2" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wrong_big_normal_default" android:scaleType="center"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/phrase_training_opt_3" android:layout_width="0dp" android:layout_height="0dp">
+                <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/phrase_training_img_3" android:padding="4.5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:autoRecycle="true"/>
+                <ImageView android:id="@+id/phrase_training_tag_3" android:background="#00000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wrong_big_normal_default" android:scaleType="center"/>
+            </FrameLayout>
+        </com.baicizhan.main.customview.FixedGridLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/phrase_training_sound_frame" android:background="?attr/drawable_button_line" android:layout_width="38dp" android:layout_height="30dp" android:layout_marginRight="8dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/phrase_training_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

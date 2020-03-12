@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/color_common_keyboard_bg" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+    <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_progress" android:id="@+id/word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="period"/>
+    <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_text_mediabar" android:id="@+id/phonetic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="[&apos;pialdla;]" android:layout_toRightOf="@+id/word" android:layout_alignBaseline="@+id/word"/>
+    <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_text_mediabar" android:id="@+id/mean" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/word"/>
+</RelativeLayout>

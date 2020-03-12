@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/notify_msg_bar" android:background="?attr/color_message_head" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <ImageView android:id="@+id/notify_msg_back" android:background="@drawable/business_common_selector" android:paddingLeft="11dp" android:paddingRight="11dp" android:layout_width="wrap_content" android:layout_height="50dp" android:src="?attr/drawable_message_back"/>
+    <TextView android:textSize="@dimen/T5" android:textColor="?attr/color_message_titletexticon" android:gravity="center" android:layout_width="wrap_content" android:layout_height="50dp" android:text="通知消息" android:layout_centerHorizontal="true"/>
+    <android.support.p004v4.widget.SwipeRefreshLayout android:id="@+id/notify_msg_list_swipe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_below="@+id/notify_msg_bar">
+        <ListView android:id="@+id/notify_msg_list" android:paddingTop="10dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/business_common_selector" android:cacheColorHint="#00000000" android:divider="?attr/color_message_line" android:dividerHeight="1px"/>
+    </android.support.p004v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

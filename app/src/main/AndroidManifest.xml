@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     android:versionCode="7000004" android:versionName="7.0.0" android:compileSdkVersion="29" android:compileSdkVersionCodename="10"
+
+
+    package="com.jiongji.andriod.card">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jiongji.andriod.card.activity.MainActivity"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

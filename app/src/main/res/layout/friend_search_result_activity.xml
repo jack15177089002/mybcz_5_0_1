@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/business_dc3" android:layout_width="match_parent" android:layout_height="@dimen/friend_facet_header_height">
+        <ImageView android:id="@+id/back" android:background="@drawable/friend_nnull_pdc2_snull" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/friend_back" android:scaleType="fitXY" android:layout_centerVertical="true" android:onClick="onClick"/>
+        <TextView android:textSize="@dimen/business_fs4" android:textColor="@color/business_dt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friend_search_result" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/suggestion_grid" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:listSelector="#00000000" android:divider="@color/business_dt5" android:dividerHeight="1px"/>
+</LinearLayout>

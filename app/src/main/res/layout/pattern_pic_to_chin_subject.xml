@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/topic_deformation_image" android:layout_width="0dp" android:layout_height="0dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/question" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="38dp" android:layout_height="38.5dp" android:src="?attr/drawable_question" android:layout_toRightOf="@+id/topic_deformation_image"/>
+    <TextView android:id="@+id/topic_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/topic_deformation_image" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/T5" android:textColor="?attr/color_button_text_mediabar" android:id="@+id/topic_phonetic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/topic_word" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/hint_divider" android:background="?attr/color_button_oval" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_below="@+id/topic_phonetic"/>
+    <ViewAnimator android:id="@+id/hint_switcher" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/hint_divider">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/topic_sentence_hint" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/topic_image" android:layout_width="80dp" android:layout_height="60dp" android:layout_marginTop="8dp" android:layout_marginRight="5dp" android:scaleType="fitCenter"/>
+            <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_text_review" android:id="@+id/topic_sentence" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_text_review" android:id="@+id/topic_mean_en" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_text_review" android:id="@+id/topic_mean_cn" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ViewAnimator>
+</RelativeLayout>

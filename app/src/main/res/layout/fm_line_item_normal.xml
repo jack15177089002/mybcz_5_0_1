@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="?attr/drawable_bg_fm_card" android:layout_width="315dp" android:layout_height="231dp" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/T9" android:textColor="?attr/color_fm_deep_blue" android:id="@+id/fm_line_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="10dp" android:text="Slope"/>
+        <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_fm_firstcard" android:id="@+id/fm_line_cnmean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="3dp" android:layout_marginBottom="8dp" android:text="n. 斜坡"/>
+        <View android:id="@+id/fm_line_normal_divider" android:background="?attr/color_line_fm" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_fm_firstcard" android:id="@+id/fm_line_example" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="8dp" android:text="The man is skiing down the slope."/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textSize="@dimen/T2" android:textColor="?attr/color_button_oval" android:id="@+id/fm_line_send_err" android:background="?attr/drawable_button_oval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0dp" android:text="@string/fm_send_err" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

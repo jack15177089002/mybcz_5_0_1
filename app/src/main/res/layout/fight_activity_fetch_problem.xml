@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/problem_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_problem_range"/>
+    <RelativeLayout android:id="@+id/download_problem" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/back_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/fight_back" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/for_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_for" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/match" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/fight_match" android:layout_below="@+id/for_vs" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/match_me" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="0dp" android:layout_toLeftOf="@+id/back_vs" android:layout_centerVertical="true">
+            <com.baicizhan.client.business.widget.CircleImageView android:id="@+id/match_me_head" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerHorizontal="true" app:border_width="3dp" app:border_color="@color/fight_def_blue_color"/>
+            <TextView android:textSize="20dp" android:id="@+id/match_me_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="Alice" android:singleLine="true" android:layout_below="@+id/match_me_head" android:layout_centerHorizontal="true" android:alpha="0.5"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/match_part" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_toRightOf="@+id/back_vs" android:layout_centerVertical="true">
+            <com.baicizhan.client.business.widget.CircleImageView android:id="@+id/match_part_head" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerHorizontal="true" app:border_width="3dp" app:border_color="@color/fight_def_gray_color"/>
+            <TextView android:textSize="20dp" android:id="@+id/match_part_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="Mike" android:singleLine="true" android:layout_below="@+id/match_part_head" android:layout_centerHorizontal="true" android:alpha="0.5"/>
+        </RelativeLayout>
+        <ProgressBar android:id="@+id/down_img_prog" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:progressDrawable="@drawable/fight_progress_horizontal" android:indeterminateDuration="100" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+    </RelativeLayout>
+</FrameLayout>

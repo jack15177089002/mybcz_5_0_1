@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="?attr/drawable_bg_fm_card" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="35dp" android:layout_marginTop="30dp" android:layout_marginRight="35dp" android:layout_marginBottom="50dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/phrase_training_image" android:layout_width="175dp" android:layout_height="175dp" android:scaleType="centerCrop" android:layout_centerInParent="true" app:autoRecycle="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="175dp" android:layout_marginRight="8dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/T9" android:textColor="?attr/color_darkblue" android:gravity="center" android:id="@+id/phrase_training_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cut out"/>
+            <View android:background="?attr/color_line_fm" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/T4" android:textColor="?attr/color_fm_firstcard" android:gravity="center_vertical" android:id="@+id/phrase_training_mean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强调被剪下的东西；\10如从杂志上剪下了一张图片"/>
+            <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center_vertical" android:id="@+id/phrase_training_example" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="cut the heart shape out of paper"/>
+            <TextView android:textSize="@dimen/T1" android:textColor="?attr/color_welcome_bg2" android:gravity="bottom" android:id="@+id/phrase_training_test_from" android:layout_width="wrap_content" android:layout_height="0dp" android:text="*2013年高考试题（陕西卷）" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/phrase_training_sound_frame" android:background="?attr/drawable_button_line" android:layout_width="38dp" android:layout_height="30dp" android:layout_marginRight="8dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/phrase_training_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/phrase_training_next_q" android:background="?attr/drawable_button_line" android:visibility="visible" android:layout_width="114dp" android:layout_height="30dp" android:layout_marginRight="16dp" android:layout_marginBottom="5dp" android:text="@string/phrase_training_next_question" android:layout_toLeftOf="@+id/phrase_training_sound_frame" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

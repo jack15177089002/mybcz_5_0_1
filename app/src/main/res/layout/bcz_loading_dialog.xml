@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200dp" android:minHeight="100dp">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_centerInParent="true">
+        <com.baicizhan.client.business.view.RotatingImageView android:id="@+id/loading_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_dots_normal_default"/>
+        <TextView android:id="@+id/bcz_dialog_messageText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/bczDialogMessage"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#f0eee8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:id="@+id/items_grid" android:paddingLeft="11dp" android:paddingTop="11dp" android:paddingRight="11dp" android:paddingBottom="11dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#0000" android:cacheColorHint="#0000" android:horizontalSpacing="11dp" android:verticalSpacing="11dp" android:numColumns="2"/>
+    <TextView android:textSize="20dp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@+id/empty_text" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/empty_list_retry"/>
+</RelativeLayout>

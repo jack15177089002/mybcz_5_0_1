@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="?attr/color_dark_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/waiting" android:layout_width="32dp" android:layout_height="53dp" android:src="@drawable/waiting_normal_default" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_mail_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="数据读取中，请稍候" android:layout_below="@+id/waiting" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

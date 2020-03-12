@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.main.customview.LeftSlidingMenuView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_left_drawer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_line" android:layout_width="match_parent" android:layout_height="45dp" android:baselineAligned="false">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:src="@drawable/me_white_normal_default"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="呵呵"/>
+            <ImageView android:typeface="sans" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@+id/try_user_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:src="@drawable/setting_tryuse_shuoming_background"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/schedule_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:src="@drawable/plan_white_normal_default"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:text="我的计划"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/alarm_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:src="@drawable/alarm_white_normal_default"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:text="提醒我背单词"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/feedback_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.baicizhan.client.business.widget.RedDotImageView android:id="@+id/feedback_icon" android:padding="4dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:src="@drawable/comment_white_normal_default" app:redDotColor="@color/business_dc7" app:redDotRadius="4dp"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:text="反馈"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/shopping_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:src="@drawable/tmall_white_normal_default"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:id="@+id/shopping_text" android:layout_width="wrap_content" android:layout_height="45dp" android:text="百词斩周边"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/vocabulary_test_line" android:layout_width="match_parent" android:layout_height="45dp" android:baselineAligned="false">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:src="@drawable/word_test_white_normal_default"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:text="单词量测试"/>
+            <TextView android:textSize="@dimen/T3" android:textColor="@color/C20" android:id="@+id/vocabulary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/setting_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:src="@drawable/settings_white_normal_default"/>
+            <TextView android:textSize="@dimen/T3" android:textStyle="bold" android:textColor="@color/C32" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="45dp" android:text="设置"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/T1" android:textColor="@color/C20" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/app_version" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:text="5.0.0"/>
+</com.baicizhan.main.customview.LeftSlidingMenuView>

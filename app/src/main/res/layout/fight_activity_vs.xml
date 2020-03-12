@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/vs_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.baicizhan.client.business.widget.CircleImageView android:id="@+id/vs_me" android:layout_width="52dp" android:layout_height="52dp" android:layout_margin="6dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:border_width="3dp" app:border_color="@color/fight_def_blue_color"/>
+    <TextView android:textSize="25dp" android:textColor="#aaffffff" android:id="@+id/vs_tip" android:visibility="gone" android:layout_width="420dp" android:layout_height="wrap_content" android:layout_centerInParent="true" android:lineSpacingMultiplier="1.3"/>
+    <TextView android:gravity="center" android:id="@+id/me_nick" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_margin="6dp" android:maxWidth="200dp" android:layout_toRightOf="@+id/vs_me"/>
+    <com.baicizhan.client.business.widget.CircleImageView android:id="@+id/vs_part" android:layout_width="52dp" android:layout_height="52dp" android:layout_margin="6dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:border_width="3dp" app:border_color="@color/fight_def_gray_color"/>
+    <TextView android:gravity="center" android:id="@+id/part_nick" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_margin="6dp" android:maxWidth="200dp" android:layout_toLeftOf="@+id/vs_part"/>
+    <com.baicizhan.client.fight.customview.RoundProgress android:gravity="center" android:id="@+id/count_down" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:rp_radius="20dp"/>
+    <include android:id="@+id/vs_answer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="52dp" android:layout_marginRight="52dp" android:layout_marginBottom="6dp" android:layout_below="@+id/count_down" layout="@layout/fight_answer"/>
+    <RelativeLayout android:gravity="center" android:layout_width="52dp" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginTop="12dp" android:layout_marginRight="6dp" android:layout_marginBottom="12dp" android:layout_below="@+id/me_nick" android:layout_alignParentLeft="true">
+        <View android:background="@drawable/fight_multi_colors_progress_bg" android:layout_width="6dp" android:layout_height="match_parent"/>
+        <com.baicizhan.client.fight.customview.MultiColorsProgress android:id="@+id/color_progress" android:layout_width="6dp" android:layout_height="match_parent"/>
+        <View android:background="@drawable/fight_multi_colors_progress_mask" android:layout_width="6dp" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

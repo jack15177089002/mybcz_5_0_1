@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/status_bar_latest_event_content" android:background="@drawable/notification_bg" android:layout_width="match_parent" android:layout_height="64dp" >
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/notification_large_icon_width" android:layout_height="@dimen/notification_large_icon_height" android:src="@android:drawable/stat_sys_download" android:scaleType="center"/>
+    <LinearLayout android:gravity="top" android:layout_gravity="fill_vertical" android:orientation="vertical" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_large_icon_width" android:minHeight="@dimen/notification_large_icon_height">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/line1" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+            <TextView android:textAppearance="@style/EventContent.Title" android:ellipsize="marquee" android:id="@+id/title" android:fadingEdge="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notification_clear_all"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="12dp" style="?android:attr/progressBarStyleHorizontal"/>
+        <TextView android:textAppearance="@style/EventContent.Info" android:gravity="center" android:layout_gravity="center" android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

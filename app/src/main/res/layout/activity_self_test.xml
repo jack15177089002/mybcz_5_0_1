@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/learning_header" android:layout_width="match_parent" android:layout_height="35dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+            <ImageView android:id="@+id/home" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="61dp" android:layout_height="match_parent" android:src="?attr/drawable_home"/>
+            <TextView android:textSize="@dimen/T8" android:textColor="?attr/color_bar_text" android:gravity="center_vertical" android:id="@+id/words_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <ImageView android:layout_width="11dp" android:layout_height="match_parent" android:src="?attr/drawable_topic_top_bg" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/T8" android:textColor="?attr/color_bar_text" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/last_topic" android:background="?attr/color_common_keyboard_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.baicizhan.client.business.widget.DirectionalViewPager android:orientation="vertical" android:id="@+id/words_gallery" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="35dp" android:layout_marginRight="20dp" android:layout_marginBottom="35dp" android:layout_weight="3"/>
+        <RelativeLayout android:layout_gravity="center_vertical" android:paddingTop="35dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/remember_the_word_btn" android:background="?attr/drawable_button_line" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginRight="13dp" android:text="@string/remember_the_word"/>
+            <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/forget_the_word_btn" android:background="?attr/drawable_button_line" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="10dp" android:layout_marginRight="13dp" android:text="@string/forget_the_word" android:layout_below="@+id/remember_the_word_btn"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="13dp" android:layout_below="@+id/forget_the_word_btn">
+                <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/slash_btn" android:background="?attr/drawable_button_line" android:layout_width="0dp" android:layout_height="30dp" android:layout_marginRight="5dp" android:text="@string/kill" android:layout_weight="1"/>
+                <ImageButton android:id="@+id/pronounce_btn" android:background="?attr/drawable_button_line" android:layout_width="0dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="?attr/drawable_sound" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:paddingTop="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的词汇量大约在"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="90sp" android:textStyle="bold" android:textColor="@color/wordtesting_common_blue" android:id="@+id/textTestResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1078"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="20dp"/>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/wordtesting_common_white" android:id="@+id/btnExit" android:background="@drawable/wordtesting_score_button" android:layout_width="match_parent" android:layout_height="55dp" android:text="好的，知道了" android:layout_weight="1"/>
+                <LinearLayout android:layout_width="10dp" android:layout_height="wrap_content"/>
+                <com.baicizhan.client.wordtesting.view.CommonButton android:textColor="@color/wordtesting_common_blue" android:id="@+id/btnOnceMore" android:background="@drawable/wordtesting_common_button" android:layout_width="match_parent" android:layout_height="55dp" android:text="再测一次" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout android:background="@color/wordtesting_common_blue" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

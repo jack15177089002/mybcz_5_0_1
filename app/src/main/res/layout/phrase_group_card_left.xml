@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/phrase_group_card" android:layout_width="237dp" android:layout_height="147dp" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/T5" android:textColor="?attr/color_common_white" android:gravity="center" android:id="@+id/phrase_group_index" android:layout_width="match_parent" android:layout_height="33dp" android:text="@string/phrase_group_course" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/phrase_group_learnt" android:background="@drawable/learnt" android:visibility="gone" android:layout_width="33dp" android:layout_height="33dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/phrase_group_phrases" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:layout_below="@+id/phrase_group_index">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_6" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+                <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_fm_firstcard" android:gravity="center" android:id="@+id/phrase_group_phrase_7" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

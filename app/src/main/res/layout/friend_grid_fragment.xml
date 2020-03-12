@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/notification_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="63dp">
+        <TextView android:textSize="@dimen/business_fs3" android:textColor="@color/business_dt2" android:gravity="center" android:id="@+id/notifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55dp" android:layout_marginRight="64dp" android:singleLine="true" android:layout_centerInParent="true"/>
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/friend_notification" android:scaleType="fitXY" android:layout_toLeftOf="@+id/notifications" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="4.5dp" android:layout_height="14dp" android:src="@drawable/friend_arrow" android:scaleType="fitXY" android:layout_toRightOf="@+id/notifications" android:layout_centerVertical="true"/>
+        <View android:background="@color/business_dc3" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="right" android:id="@+id/add_friend" android:paddingLeft="22dp" android:paddingTop="10dp" android:paddingRight="22dp" android:paddingBottom="10dp" android:layout_width="69dp" android:layout_height="45dp" android:src="@drawable/friend_add_friend" android:scaleType="fitXY"/>
+    <TextView android:textSize="@dimen/business_fs5" android:textColor="@color/business_dt5" android:gravity="center" android:id="@+id/empty_view" android:paddingBottom="69dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/friend_facet_header_height" android:text="@string/friend_empty_friends_prompt"/>
+    <com.baicizhan.client.friend.widget.DragWrapperLayout android:id="@+id/wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <GridView android:id="@+id/friend_grid" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:cacheColorHint="#00000000" android:horizontalSpacing="2dp" android:verticalSpacing="1dp" android:numColumns="2"/>
+    </com.baicizhan.client.friend.widget.DragWrapperLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/phrase_training_head" android:layout_width="match_parent" android:layout_height="35dp">
+        <ImageView android:gravity="center_vertical" android:id="@+id/phrase_training_home" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="?attr/drawable_home" android:layout_centerVertical="true"/>
+        <ProgressBar android:id="@+id/phrase_training_progress" android:layout_width="270dp" android:layout_height="4dp" android:progress="0" android:layout_toRightOf="@+id/phrase_training_home" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/phrase_training_qa_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/phrase_training_head"/>
+    <ProgressBar android:id="@+id/phrase_training_load_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp" android:progress="0" android:progressDrawable="@drawable/business_progress_horizontal" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 28
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.jiongji.andriod.card"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 7000000
+        versionName "7.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi',  'x86','x86_64','mips','mips64'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    packagingOptions {
+//        pickFirst 'META-INF/*'
+//    }
+
+    repositories {
+        flatDir {
+            dirs 'lib'   // aar目录
+        }
+    }
+
+    //配置jniLibs目录
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['src/main/lib']
+        }
+    }
+
+//    sourceSets {
+//        main() {
+//            jniLibs.srcDirs = ['src/main/jniLibs']
+//        }
+//    }
+
+
+
+
+
+    allprojects {
+        repositories {
+            jcenter()
+            mavenCentral()
+            maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+        }
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+//    implementation 'com.baidu.mobstat:mtj-sdk:latest.integration' //可能没用
+    implementation 'com.networkbench.newlens.agent.android:nbs.newlens.agent:2.4.4'
+//    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+//      implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.1.6'
+//    implementation  'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation  'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.3.4'
+
+//    implementation 'com.sina.weibo.sdk:core:4.1.0:openDefaultRelease@aar'
+    implementation 'com.sina.weibo.sdk:core:4.4.3:openDefaultRelease@aar'
+
+//    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.android.support:recyclerview-v7:+'
+
+//    implementation 'com.android.support:support-v4:+'
+
+
+    implementation 'com.google.code.gson:gson:2.6.2' //2.8.2 可能最新
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'commons-httpclient:commons-httpclient:3.1'
+//    implementation 'org.apache.httpcomponents:httpclient:4.5.3'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

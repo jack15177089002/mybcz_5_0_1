@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:gravity="center_vertical" android:id="@+id/plusreview_home" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="35dp" android:src="?attr/drawable_home"/>
+    <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_text_mediabar" android:gravity="center" android:layout_gravity="center" android:id="@+id/plusreview_entrance_head_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/plusreview_entrance_head_msg"/>
+    <View android:id="@+id/plusreview_entrance_divider" android:background="?attr/color_button_oval" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_marginTop="22dp" android:layout_marginRight="20dp" android:layout_marginBottom="22dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/plusreview_to_listen" android:layout_width="92dp" android:layout_height="126dp" android:layout_marginRight="35dp" android:src="?attr/drawable_ting"/>
+        <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/plusreview_to_read" android:layout_width="92dp" android:layout_height="126dp" android:layout_marginRight="35dp" android:src="?attr/drawable_du"/>
+        <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/plusreview_to_write" android:layout_width="92dp" android:layout_height="126dp" android:src="?attr/drawable_pin"/>
+        <RelativeLayout android:id="@+id/plusreview_to_match_container" android:layout_width="92dp" android:layout_height="126dp" android:layout_marginLeft="35dp">
+            <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/plusreview_to_match" android:layout_width="92dp" android:layout_height="126dp" android:src="?attr/drawable_pei"/>
+            <ImageView android:id="@+id/plusreview_to_match_info" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginBottom="11dp" android:src="@drawable/review_info_normal_default" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

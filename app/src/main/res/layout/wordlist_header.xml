@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.main.wordlist.view.WordListHeader xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/wordlist_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/wordlist_header_top" android:background="?attr/color_common_bar" android:layout_width="match_parent" android:layout_height="@dimen/wordlist_header_height">
+        <ImageButton android:id="@+id/wordlist_header_home" android:background="#00000000" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="?attr/drawable_home"/>
+        <include android:layout_width="300dp" android:layout_height="match_parent" android:layout_centerInParent="true" layout="@layout/wordlist_navigation"/>
+        <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/wordlist_header_edit" android:background="?attr/drawable_button_line" android:layout_width="45dp" android:layout_height="27dp" android:layout_marginRight="20dp" android:text="@string/wordlist_header_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/wordlist_header_bottom" android:background="?attr/color_window_outline" android:layout_width="match_parent" android:layout_height="@dimen/wordlist_header_height">
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_darkblue" android:gravity="center" android:id="@+id/wordlist_header_word_count" android:layout_width="145dp" android:layout_height="match_parent" android:text="@string/wordlist_header_word_count"/>
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_darkblue" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/wordlist_header_word_cnmean"/>
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_darkblue" android:gravity="center" android:id="@+id/wordlist_header_wrong_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:text="@string/wordlist_header_wrong_count" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</com.baicizhan.main.wordlist.view.WordListHeader>

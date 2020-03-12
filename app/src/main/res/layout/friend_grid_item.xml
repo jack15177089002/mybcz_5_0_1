@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/friend_grid_item" android:clickable="false" android:layout_width="match_parent" android:layout_height="80dp" android:baselineAligned="false">
+    <FrameLayout android:background="@color/business_dc4" android:layout_width="80dp" android:layout_height="match_parent">
+        <com.baicizhan.client.business.widget.CircleImageView android:layout_gravity="center" android:id="@+id/thumb" android:layout_width="62.5dp" android:layout_height="62.5dp" android:src="@drawable/business_thumb" app:border_width="2dp" app:border_color="@color/business_dc8"/>
+    </FrameLayout>
+    <ViewSwitcher android:id="@+id/switcher" android:background="@color/business_dc2" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/infos" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/business_fs4" android:textColor="@color/business_dt1" android:ellipsize="marquee" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/business_fs2" android:textColor="@color/business_dt3" android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/business_fs2" android:textColor="@color/business_dt3" android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/operations" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/delete" android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/friend_delete" android:scaleType="fitXY"/>
+        </LinearLayout>
+    </ViewSwitcher>
+</LinearLayout>

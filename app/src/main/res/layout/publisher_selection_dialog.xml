@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/T5" android:textColor="@color/C36" android:gravity="center" android:id="@+id/title" android:layout_width="320dp" android:layout_height="48dp" android:text="切换出版社"/>
+    <FrameLayout android:id="@+id/placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <kankan.wheel.widget.WheelView android:layout_gravity="center" android:id="@+id/wheel" android:layout_width="320dp" android:layout_height="180dp"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/T5" android:textColor="?attr/color_blue_btn" android:gravity="center" android:id="@+id/ok" android:layout_width="320dp" android:layout_height="48dp" android:text="@string/main_alert_positive_confirm"/>
+</LinearLayout>

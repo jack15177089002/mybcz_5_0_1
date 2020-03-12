@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ad_content" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ad_quotation_card" android:visibility="gone" android:layout_width="370dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/T5" android:textColor="?attr/color_list_text1" android:id="@+id/ad_quotaion_en" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="english"/>
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_list_text2" android:id="@+id/ad_quotation_cn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="中文"/>
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_list_text2" android:layout_gravity="right" android:id="@+id/ad_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:text="——哈哈哈"/>
+    </LinearLayout>
+    <com.baicizhan.client.business.widget.RecycleableImageView android:id="@+id/ad_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:autoRecycle="true"/>
+    <p116pl.droidsonroids.gif.GifImageView android:id="@+id/ad_loading_gif" android:layout_width="337dp" android:layout_height="15.6dp" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/ad_click_rect" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

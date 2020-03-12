@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/plusreview_match_top" android:layout_width="match_parent" android:layout_height="35dp">
+        <ImageView android:gravity="center_vertical" android:id="@+id/plusreview_match_home" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="?attr/drawable_home" android:layout_centerVertical="true"/>
+        <com.baicizhan.client.business.view.QuizStateProgressBar android:id="@+id/plusereview_match_qsp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/plusreview_match_home" android:layout_centerVertical="true" app:quantity="20"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/plusreview_match_bottom" android:layout_width="match_parent" android:layout_height="35dp" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/plusreview_match_continue" android:background="?attr/drawable_button_line" android:layout_width="114dp" android:layout_height="30dp" android:text="@string/next_question"/>
+        <Button android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/plusreview_match_to_wiki" android:background="?attr/drawable_button_line" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:text="@string/more"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/plusereview_match_qa_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/plusreview_match_bottom" android:layout_below="@+id/plusreview_match_top"/>
+    <FrameLayout android:id="@+id/plusreview_match_wiki_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/plusreview_match_progress_layout" android:background="#99434343" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/plusreview_match_progress" android:layout_width="match_parent" android:layout_height="4dp" android:progressDrawable="@drawable/business_progress_horizontal" style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+</RelativeLayout>

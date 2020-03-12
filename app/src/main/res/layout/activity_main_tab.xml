@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="?attr/color_common_bg" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="36dp" android:baselineAligned="false" android:weightSum="100">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/left_card" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="50">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/T2" android:typeface="sans" android:textColor="?attr/color_button_oval" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="剩余" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/T2" android:typeface="sans" android:textColor="?attr/color_button_oval" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="今天背单词" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/T9" android:typeface="sans" android:textColor="?attr/color_main_text1" android:gravity="center" android:id="@+id/remain_days" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/T9" android:typeface="sans" android:textColor="?attr/color_main_text1" android:gravity="center" android:id="@+id/daily_new_count" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp">
+                <TextView android:textSize="@dimen/T3" android:typeface="sans" android:textColor="?attr/color_button_oval" android:gravity="left" android:id="@+id/book_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1"/>
+                <com.baicizhan.client.business.widget.RoundedButton android:textSize="@dimen/T2" android:textColor="?attr/color_button_oval" android:gravity="center" android:id="@+id/phrase_training" android:layout_width="64dp" android:layout_height="30dp" android:layout_marginRight="5dp" android:text="词组特训" app:strokeWidth="1px" app:cornerRadius="50dp" app:strokeColor="?attr/color_button_oval" app:fillColor="?attr/color_main_window_bg"/>
+                <com.baicizhan.client.business.widget.RoundedButton android:textSize="@dimen/T2" android:textColor="?attr/color_button_oval" android:gravity="center" android:id="@+id/change_schedule" android:layout_width="64dp" android:layout_height="30dp" android:text="改计划" app:strokeWidth="1px" app:cornerRadius="50dp" app:strokeColor="?attr/color_button_oval" app:fillColor="?attr/color_main_window_bg"/>
+            </LinearLayout>
+            <View android:background="?attr/color_line_main" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:layout_marginRight="20dp" android:baselineAligned="true">
+                <TextView android:textSize="@dimen/T5" android:layout_gravity="bottom" android:id="@+id/schedule_progress_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.baicizhan.main.customview.OfflineDownloadView android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/offline_download_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/schedule_progress_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="8dp" android:layout_marginRight="25dp" android:max="100" style="?android:attr/progressBarStyleHorizontal"/>
+        </LinearLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="6"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="30">
+            <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_text" android:gravity="center" android:id="@+id/schedule_instruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:id="@+id/finish_buttons" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:baselineAligned="false">
+                <Button android:textSize="@dimen/T2" android:textColor="?attr/color_button_text" android:id="@+id/daka_button" android:background="?attr/drawable_button_circular" android:layout_width="50dp" android:layout_height="50dp" android:text="打卡"/>
+                <Button android:textSize="@dimen/T2" android:textColor="?attr/color_button_text" android:id="@+id/want_more_button" android:background="?attr/drawable_button_circular" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="25dp" android:text="再来25"/>
+                <Button android:textSize="@dimen/T2" android:textColor="?attr/color_button_text" android:id="@+id/celebrate_button" android:background="?attr/drawable_button_circular" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="25dp" android:text="来跳个舞"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/review_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="?attr/drawable_review_button"/>
+            <ImageView android:id="@+id/start_study_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="20dp" android:src="?attr/drawable_study_button" android:soundEffectsEnabled="false"/>
+            <ImageView android:id="@+id/word_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="?attr/drawable_fm_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/T2" android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/popup_message_text" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="invisible" android:layout_width="305dp" android:layout_height="36dp" android:layout_marginTop="5dp" android:singleLine="true"/>
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="36dp" layout="@layout/main_bottom_tab_layout"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/main_goto_notify_msg" android:visibility="gone" android:layout_width="33.5dp" android:layout_height="30dp" android:layout_marginTop="11dp" android:src="?attr/drawable_main_study_message" android:scaleType="fitXY"/>
+    <include layout="@layout/main_review_guide"/>
+</FrameLayout>

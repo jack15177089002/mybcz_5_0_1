@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:gravity="center_vertical" android:id="@+id/fm_tv_home" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="35dp" android:src="?attr/drawable_home"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fm_tv_home">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <p116pl.droidsonroids.gif.GifImageView android:id="@+id/fm_anim" android:background="@drawable/baofm_stationary_normal_default" android:layout_width="165dp" android:layout_height="165dp"/>
+            <Button android:textSize="@dimen/T5" android:textColor="?attr/color_button_tvfm_text" android:id="@+id/fm_go_btn" android:layout_width="152dp" android:layout_height="58dp" android:layout_marginTop="19dp" android:text="FM"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <p116pl.droidsonroids.gif.GifImageView android:id="@+id/tv_anim" android:background="@drawable/baotv_stationary_normal_default" android:layout_width="165dp" android:layout_height="165dp"/>
+            <Button android:textSize="@dimen/T5" android:textColor="?attr/color_button_tvfm_text" android:id="@+id/tv_go_btn" android:layout_width="152dp" android:layout_height="58dp" android:layout_marginTop="19dp" android:text="TV"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?attr/color_button_oval" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="35dp" android:layout_marginBottom="35dp" android:layout_centerHorizontal="true"/>
+    <ProgressBar android:id="@+id/data_load_progress" android:layout_width="match_parent" android:layout_height="4dp" android:progress="0" android:progressDrawable="@drawable/business_progress_horizontal" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.main.customview.MainReviewGuider xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_review_guide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/T2" android:textColor="@color/C32" android:gravity="center" android:id="@+id/guide_tip_pk" android:layout_width="wrap_content" android:layout_height="36dp" android:text="@string/main_guide_pk"/>
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/guide_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90dp">
+        <TextView android:textSize="@dimen/T2" android:textColor="@color/C22" android:id="@+id/guide_tip_review" android:paddingLeft="14dp" android:paddingTop="15dp" android:paddingRight="14dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_guide_other_review"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/guide_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangle_white_down_normal_default"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/guide_bao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/bao_guide_normal_default"/>
+    </LinearLayout>
+</com.baicizhan.main.customview.MainReviewGuider>

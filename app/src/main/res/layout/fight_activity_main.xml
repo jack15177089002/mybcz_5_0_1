@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/start" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <FrameLayout android:id="@+id/start_left_frame" android:background="@color/fight_def_deep_gray_color" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <FrameLayout android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back" android:background="@drawable/fight_back_background" android:layout_width="@dimen/fight_back_width" android:layout_height="@dimen/fight_back_height" android:src="@drawable/fight_back_foreground"/>
+        </FrameLayout>
+        <include android:id="@+id/info_panel" android:visibility="visible" layout="@layout/fight_info_tabs"/>
+        <include android:id="@+id/challenger_panel" android:visibility="gone" layout="@layout/fight_match_challengers"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/start_right_frame" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/entrance_panel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_random_match_background"/>
+                <com.baicizhan.client.business.widget.RoundedButton android:textSize="18dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/random_match_button" android:padding="3dp" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="30dp" android:text="随机约" app:cornerRadius="@dimen/fight_default_rect_radius" app:fillColor="@color/fight_nblue_pdeepblue_sdeepblue"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_adjacent_match_background"/>
+                <com.baicizhan.client.business.widget.RoundedButton android:textSize="18dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/adjacent_match_button" android:padding="3dp" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="附近约" app:cornerRadius="@dimen/fight_default_rect_radius" app:fillColor="@color/fight_nblue_pdeepblue_sdeepblue"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/search_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/radar_bottom" android:background="@drawable/fight_radar_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/radar_sweep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_radar_sweep_rotator"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/radar_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fight_radar_top"/>
+            </FrameLayout>
+            <com.baicizhan.client.fight.customview.MatchOptsView android:layout_gravity="center_vertical" android:id="@+id/option_panel" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="15dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

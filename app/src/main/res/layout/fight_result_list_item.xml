@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="28dp">
+        <View android:id="@+id/me_correctness" android:background="@drawable/fight_me_right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/part_correctness" android:background="@drawable/fight_part_error" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="28dp">
+        <TextView android:textSize="18dp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/result_word" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="2" android:marqueeRepeatLimit="marquee_forever"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/result_mean" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="3" android:marqueeRepeatLimit="marquee_forever"/>
+    </LinearLayout>
+</RelativeLayout>

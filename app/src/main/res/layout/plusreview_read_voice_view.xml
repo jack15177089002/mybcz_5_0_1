@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.main.plusreview.view.QuizStateVoiceView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/plusreview_read_mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:src="?attr/drawable_mic_on"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/plusreview_read_mic_vols" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_above="@+id/plusreview_read_mic_vols" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_progress" android:layout_gravity="center" android:id="@+id/plusreview_read_right_word" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="afford"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/plusreview_read_wrong_tag" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/satus_wrong_wiki_normal_default"/>
+        </FrameLayout>
+    </RelativeLayout>
+</com.baicizhan.main.plusreview.view.QuizStateVoiceView>

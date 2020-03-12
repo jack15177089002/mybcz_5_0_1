@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.client.fight.customview.VSAnswerView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/mean_opts" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="30dp" android:gravity="center" android:id="@+id/mean_word" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.baicizhan.client.fight.customview.AutoResizeTextView android:gravity="center" android:id="@+id/mean_00" android:background="@drawable/fight_mean_opt_selector" android:padding="14px" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="6dp" android:layout_weight="1"/>
+            <com.baicizhan.client.fight.customview.AutoResizeTextView android:gravity="center" android:id="@+id/mean_01" android:background="@drawable/fight_mean_opt_selector" android:padding="14px" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="6dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.baicizhan.client.fight.customview.AutoResizeTextView android:gravity="center" android:id="@+id/mean_10" android:background="@drawable/fight_mean_opt_selector" android:padding="14px" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="6dp" android:layout_weight="1"/>
+            <com.baicizhan.client.fight.customview.AutoResizeTextView android:gravity="center" android:id="@+id/mean_11" android:background="@drawable/fight_mean_opt_selector" android:padding="14px" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="6dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/img_opts" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="30dp" android:gravity="center" android:id="@+id/img_word" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:alpha="0.9"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:baselineAligned="false" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame_00" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_00" android:background="#333399cc" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:id="@+id/img_frame_00" android:background="@drawable/fight_image_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_01" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_01" android:background="#333399cc" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:id="@+id/img_frame_01" android:background="@drawable/fight_image_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_10" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_10" android:background="#333399cc" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:id="@+id/img_frame_10" android:background="@drawable/fight_image_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame_11" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_11" android:background="#333399cc" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:id="@+id/img_frame_11" android:background="@drawable/fight_image_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.baicizhan.client.fight.customview.VSAnswerView>

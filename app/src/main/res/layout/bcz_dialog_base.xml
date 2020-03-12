@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300dp" android:minHeight="192dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/bczDialog_titleContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:ellipsize="middle" android:gravity="center" android:id="@+id/bczDialog_titleText" android:layout_width="match_parent" android:layout_height="0dp" android:singleLine="true" android:layout_weight="1" style="@style/bczDialogTitle"/>
+        <View android:background="?attr/color_checkin_text" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/bczDialog_contentView" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_margin="23dp" android:minWidth="254dp" android:layout_weight="1"/>
+</LinearLayout>

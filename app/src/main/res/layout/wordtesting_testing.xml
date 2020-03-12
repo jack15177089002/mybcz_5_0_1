@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="80dp">
+        <com.baicizhan.client.wordtesting.view.CountDownView android:textColor="#ff29c4f4" android:id="@+id/cdv" android:visibility="visible" android:layout_width="60dp" android:layout_height="60dp" circleColor="#ff29c4f4" circlePassedColor="#ff5e5e5e" animateDurationMilliSecend="100" totalSeconds="6"/>
+        <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/textExpired" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="少侠可能不认识这个单词, 您可以继续作答" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="40sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/textWord" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/textInfo" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p099me.grantland.widget.AutofitTextView android:textSize="@dimen/business_fs3" android:textColor="#ff29c4f4" android:ellipsize="end" android:gravity="center" android:id="@+id/btnOpt1" android:background="@drawable/wordtesting_opt_unknown_button" android:layout_width="match_parent" android:layout_height="65dp" android:maxLines="3" android:layout_weight="1" app:textSizeWhenMaxLine="@dimen/business_fs3_small"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="5dp" android:layout_height="5dp"/>
+            <p099me.grantland.widget.AutofitTextView android:textSize="@dimen/business_fs3" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/btnOpt2" android:background="@drawable/wordtesting_opt_normal_button" android:layout_width="match_parent" android:layout_height="65dp" android:maxLines="3" android:layout_weight="1" app:textSizeWhenMaxLine="@dimen/business_fs3_small"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="5dp" android:layout_height="5dp"/>
+            <p099me.grantland.widget.AutofitTextView android:textSize="@dimen/business_fs3" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/btnOpt3" android:background="@drawable/wordtesting_opt_normal_button" android:padding="2dp" android:layout_width="match_parent" android:layout_height="65dp" android:maxLines="3" android:layout_weight="1" app:textSizeWhenMaxLine="@dimen/business_fs3_small"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="5dp" android:layout_height="5dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p099me.grantland.widget.AutofitTextView android:textSize="@dimen/business_fs3" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/btnOpt4" android:background="@drawable/wordtesting_opt_normal_button" android:padding="2dp" android:layout_width="match_parent" android:layout_height="65dp" android:maxLines="3" android:layout_weight="1" app:textSizeWhenMaxLine="@dimen/business_fs3_small"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="5dp" android:layout_height="5dp"/>
+            <p099me.grantland.widget.AutofitTextView android:textSize="@dimen/business_fs3" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/btnOpt5" android:background="@drawable/wordtesting_opt_normal_button" android:padding="2dp" android:layout_width="match_parent" android:layout_height="65dp" android:maxLines="3" android:layout_weight="1" app:textSizeWhenMaxLine="@dimen/business_fs3_small"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="5dp" android:layout_height="5dp"/>
+            <p099me.grantland.widget.AutofitTextView android:textSize="@dimen/business_fs3" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/btnOpt6" android:background="@drawable/wordtesting_opt_normal_button" android:padding="2dp" android:layout_width="match_parent" android:layout_height="65dp" android:maxLines="3" android:layout_weight="1" app:textSizeWhenMaxLine="@dimen/business_fs3_small"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

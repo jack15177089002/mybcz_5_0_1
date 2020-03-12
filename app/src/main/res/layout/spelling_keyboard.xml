@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baicizhan.main.customview.SpellingKeyboard xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="?attr/color_common_keyboard_bg" android:paddingLeft="13dp" android:paddingTop="6.5dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="147dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <include android:id="@+id/spelling_key_1" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_2" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_3" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_4" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_5" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_6" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_7" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_8" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_9" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_10" layout="@layout/spelling_key_btn"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <include android:id="@+id/spelling_key_11" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_12" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_13" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_14" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_15" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_16" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_17" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_18" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_19" layout="@layout/spelling_key_btn"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <include android:id="@+id/spelling_key_pass" layout="@layout/spelling_key_func_btn"/>
+        <include android:id="@+id/spelling_key_20" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_21" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_22" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_23" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_24" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_25" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_26" layout="@layout/spelling_key_btn"/>
+        <include android:id="@+id/spelling_key_slash" layout="@layout/spelling_key_func_btn"/>
+    </LinearLayout>
+</com.baicizhan.main.customview.SpellingKeyboard>

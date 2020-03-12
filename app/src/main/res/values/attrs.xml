@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="strokeWidth" format="dimension">
+    </attr>
+    <attr name="rfs_fast_scroller_layout" format="reference">
+    </attr>
+    <attr name="rfs_barColor" format="reference|color">
+    </attr>
+    <attr name="rfs_barBackground" format="reference">
+    </attr>
+    <attr name="rfs_handleColor" format="reference|color">
+    </attr>
+    <attr name="rfs_handleBackground" format="reference">
+    </attr>
+    <attr name="rfs_section_indicator_layout" format="reference">
+    </attr>
+    <attr name="minTextSize" format="dimension">
+    </attr>
+    <attr name="textSizeWhenMaxLine" format="dimension">
+    </attr>
+    <attr name="precision" format="float">
+    </attr>
+    <attr name="sizeToFit" format="boolean">
+    </attr>
+    <attr name="lockTargetWidth" format="boolean">
+    </attr>
+    <attr name="border_width" format="dimension">
+    </attr>
+    <attr name="border_color" format="color">
+    </attr>
+    <attr name="circleRadius" format="dimension">
+    </attr>
+    <attr name="circleBackgroundColor" format="color">
+    </attr>
+    <attr name="circleProgressColor" format="color">
+    </attr>
+    <attr name="centerSquareWidth" format="dimension">
+    </attr>
+    <attr name="dot_color_normal" format="color">
+    </attr>
+    <attr name="dot_color_selected" format="color">
+    </attr>
+    <attr name="dot_radius" format="dimension">
+    </attr>
+    <attr name="dot_interval" format="dimension">
+    </attr>
+    <attr name="dot_count" format="integer">
+    </attr>
+    <attr name="wordlock_dotCount" format="integer">
+    </attr>
+    <attr name="wordlock_dotSize" format="dimension">
+    </attr>
+    <attr name="wordlock_dotMargine" format="dimension">
+    </attr>
+    <attr name="autoCompleteColor" format="color">
+    </attr>
+    <attr name="numOfColumns" format="integer">
+    </attr>
+    <attr name="numOfRows" format="integer">
+    </attr>
+    <attr name="verticalSpacing" format="dimension">
+    </attr>
+    <attr name="horizontalSpacing" format="dimension">
+    </attr>
+    <attr name="cellWidthWeight" format="integer">
+    </attr>
+    <attr name="cellHeightWeight" format="integer">
+    </attr>
+    <attr name="contentText" format="string">
+    </attr>
+    <attr name="contentTextSize" format="dimension">
+    </attr>
+    <attr name="dotRadius" format="dimension">
+    </attr>
+    <attr name="dotColor" format="color">
+    </attr>
+    <attr name="sliderColor" format="color">
+    </attr>
+    <attr name="markerLineWidth" format="dimension">
+    </attr>
+    <attr name="markerLineColor" format="color">
+    </attr>
+    <attr name="markerRadius" format="dimension">
+    </attr>
+    <attr name="markerColor" format="color">
+    </attr>
+    <attr name="markerOffsetX" format="dimension">
+    </attr>
+    <attr name="markerMode">
+        <flag name="both" value="3" />
+        <flag name="end" value="2" />
+        <flag name="start" value="1" />
+    </attr>
+    <attr name="main_tab_bottom" format="reference">
+    </attr>
+    <attr name="main_tab_settings" format="reference">
+    </attr>
+    <attr name="main_tab_friend" format="reference">
+    </attr>
+    <attr name="main_tab_download" format="reference">
+    </attr>
+    <attr name="main_tab_update" format="reference">
+    </attr>
+    <attr name="main_tab_pk" format="reference">
+    </attr>
+    <attr name="main_tab_store" format="reference">
+    </attr>
+    <attr name="main_tab_review" format="reference">
+    </attr>
+    <attr name="ptrRefreshableViewBackground" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderBackground" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderTextColor" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderTextSize" format="reference|dimension">
+    </attr>
+    <attr name="ptrHeaderSubTextColor" format="reference|color">
+    </attr>
+    <attr name="ptrHeaderSubTextSize" format="reference|dimension">
+    </attr>
+    <attr name="ptrMode">
+        <flag name="both" value="3" />
+        <flag name="disabled" value="0" />
+        <flag name="manualOnly" value="4" />
+        <flag name="pullDownFromTop" value="1" />
+        <flag name="pullFromEnd" value="2" />
+        <flag name="pullFromStart" value="1" />
+        <flag name="pullUpFromBottom" value="2" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean">
+    </attr>
+    <attr name="ptrDrawable" format="reference">
+    </attr>
+    <attr name="ptrDrawableStart" format="reference">
+    </attr>
+    <attr name="ptrDrawableEnd" format="reference">
+    </attr>
+    <attr name="ptrOverScroll" format="reference|boolean">
+    </attr>
+    <attr name="ptrHeaderTextAppearance" format="reference">
+    </attr>
+    <attr name="ptrSubHeaderTextAppearance" format="reference">
+    </attr>
+    <attr name="ptrAnimationStyle">
+        <flag name="flip" value="1" />
+        <flag name="rotate" value="0" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean">
+    </attr>
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean">
+    </attr>
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean">
+    </attr>
+    <attr name="ptrAdapterViewBackground" format="reference|color">
+    </attr>
+    <attr name="ptrDrawableTop" format="reference">
+    </attr>
+    <attr name="ptrDrawableBottom" format="reference">
+    </attr>
+    <attr name="answerBGColor" format="color">
+    </attr>
+    <attr name="answerFGColor" format="color">
+    </attr>
+    <attr name="answerBGRadius" format="dimension">
+    </attr>
+    <attr name="startBackground" format="reference">
+    </attr>
+    <attr name="normalBackground" format="reference">
+    </attr>
+    <attr name="endBackground" format="reference">
+    </attr>
+    <attr name="startRight" format="reference">
+    </attr>
+    <attr name="normalRight" format="reference">
+    </attr>
+    <attr name="endRight" format="reference">
+    </attr>
+    <attr name="startWrong" format="reference">
+    </attr>
+    <attr name="normalWrong" format="reference">
+    </attr>
+    <attr name="endWrong" format="reference">
+    </attr>
+    <attr name="startCursor" format="reference">
+    </attr>
+    <attr name="normalCursor" format="reference">
+    </attr>
+    <attr name="endCursor" format="reference">
+    </attr>
+    <attr name="quantity" format="integer">
+    </attr>
+    <attr name="autoRecycle" format="boolean">
+    </attr>
+    <attr name="redDotColor" format="color">
+    </attr>
+    <attr name="redDotRadius" format="dimension">
+    </attr>
+    <attr name="velocity" format="integer">
+    </attr>
+    <attr name="rp_radius" format="dimension">
+    </attr>
+    <attr name="rp_rim" format="dimension">
+    </attr>
+    <attr name="rp_prog_back_color" format="color">
+    </attr>
+    <attr name="rp_prog_color" format="color">
+    </attr>
+    <attr name="rp_prog_text" format="string">
+    </attr>
+    <attr name="rp_prog_text_color" format="color">
+    </attr>
+    <attr name="rp_prog_text_size" format="dimension">
+    </attr>
+    <attr name="cornerRadius" format="dimension">
+    </attr>
+    <attr name="cornerMode">
+        <flag name="all" value="15" />
+        <flag name="bottomLeft" value="8" />
+        <flag name="bottomRight" value="4" />
+        <flag name="topLeft" value="1" />
+        <flag name="topRight" value="2" />
+    </attr>
+    <attr name="strokeColor" format="reference|color">
+    </attr>
+    <attr name="fillColor" format="reference|color">
+    </attr>
+    <attr name="rfs_textColor" format="reference|color">
+    </attr>
+    <attr name="rfs_backgroundColor" format="reference|color">
+    </attr>
+    <attr name="mode">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="viewAbove" format="reference">
+    </attr>
+    <attr name="viewBehind" format="reference">
+    </attr>
+    <attr name="behindOffset" format="dimension">
+    </attr>
+    <attr name="behindWidth" format="dimension">
+    </attr>
+    <attr name="behindScrollScale" format="float">
+    </attr>
+    <attr name="touchModeAbove">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+        <enum name="none" value="2" />
+    </attr>
+    <attr name="touchModeBehind">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+        <enum name="none" value="2" />
+    </attr>
+    <attr name="shadowDrawable" format="reference">
+    </attr>
+    <attr name="shadowWidth" format="dimension">
+    </attr>
+    <attr name="fadeEnabled" format="boolean">
+    </attr>
+    <attr name="fadeDegree" format="float">
+    </attr>
+    <attr name="selectorEnabled" format="boolean">
+    </attr>
+    <attr name="selectorDrawable" format="reference">
+    </attr>
+    <attr name="sf_start_color" format="color">
+    </attr>
+    <attr name="sf_start_disabled_color" format="color">
+    </attr>
+    <attr name="sf_start_text" format="string">
+    </attr>
+    <attr name="sf_start_text_color" format="color">
+    </attr>
+    <attr name="sf_start_text_size" format="dimension">
+    </attr>
+    <attr name="sf_wave_rim" format="dimension">
+    </attr>
+    <attr name="sf_wave_color" format="color">
+    </attr>
+    <attr name="business_style">
+        <enum name="blue" value="1" />
+        <enum name="white" value="0" />
+    </attr>
+    <attr name="business_hasStroke" format="boolean">
+    </attr>
+    <attr name="business_normal_text_color" format="color">
+    </attr>
+    <attr name="business_pressed_text_color" format="color">
+    </attr>
+    <attr name="business_selected_text_color" format="color">
+    </attr>
+    <attr name="onDrawable" format="reference">
+    </attr>
+    <attr name="offDrawable" format="reference">
+    </attr>
+    <attr name="thumbDrawable" format="reference">
+    </attr>
+    <attr name="thumb_margin" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginTop" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginBottom" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginLeft" format="reference|dimension">
+    </attr>
+    <attr name="thumb_marginRight" format="reference|dimension">
+    </attr>
+    <attr name="thumb_width" format="reference|dimension">
+    </attr>
+    <attr name="thumb_height" format="reference|dimension">
+    </attr>
+    <attr name="onColor" format="reference|color">
+    </attr>
+    <attr name="offColor" format="reference|color">
+    </attr>
+    <attr name="thumbColor" format="reference|color">
+    </attr>
+    <attr name="thumbPressedColor" format="reference|color">
+    </attr>
+    <attr name="animationVelocity" format="integer">
+    </attr>
+    <attr name="radius" format="integer">
+    </attr>
+    <attr name="measureFactor" format="float">
+    </attr>
+    <attr name="insetLeft" format="reference|dimension">
+    </attr>
+    <attr name="insetRight" format="reference|dimension">
+    </attr>
+    <attr name="insetTop" format="reference|dimension">
+    </attr>
+    <attr name="insetBottom" format="reference|dimension">
+    </attr>
+    <attr name="color_common_bg" format="reference|color">
+    </attr>
+    <attr name="color_common_bg2" format="reference|color">
+    </attr>
+    <attr name="color_line_main" format="reference|color">
+    </attr>
+    <attr name="color_plan_bg" format="reference|color">
+    </attr>
+    <attr name="color_wiki_text" format="reference|color">
+    </attr>
+    <attr name="color_button_text_blue_pressed" format="reference|color">
+    </attr>
+    <attr name="color_fm_firstcard_highlight" format="reference|color">
+    </attr>
+    <attr name="color_progress" format="reference|color">
+    </attr>
+    <attr name="color_text_blue" format="reference|color">
+    </attr>
+    <attr name="color_darkblue" format="reference|color">
+    </attr>
+    <attr name="color_fm_deep_blue" format="reference|color">
+    </attr>
+    <attr name="color_friend_text" format="reference|color">
+    </attr>
+    <attr name="color_list_text1" format="reference|color">
+    </attr>
+    <attr name="color_list_text2" format="reference|color">
+    </attr>
+    <attr name="color_test3_text" format="reference|color">
+    </attr>
+    <attr name="color_wiki_text_night" format="reference|color">
+    </attr>
+    <attr name="color_common_red" format="reference|color">
+    </attr>
+    <attr name="color_dark_bg" format="reference|color">
+    </attr>
+    <attr name="color_settings_bar" format="reference|color">
+    </attr>
+    <attr name="color_card_bg" format="reference|color">
+    </attr>
+    <attr name="color_common_bar" format="reference|color">
+    </attr>
+    <attr name="color_common_keyboard_bg" format="reference|color">
+    </attr>
+    <attr name="color_progress_bg2" format="reference|color">
+    </attr>
+    <attr name="color_settings_text3" format="reference|color">
+    </attr>
+    <attr name="color_tv_bg" format="reference|color">
+    </attr>
+    <attr name="color_button_text_mediabar" format="reference|color">
+    </attr>
+    <attr name="color_fm_firstcard" format="reference|color">
+    </attr>
+    <attr name="color_friend_text3" format="reference|color">
+    </attr>
+    <attr name="color_list_text3" format="reference|color">
+    </attr>
+    <attr name="color_settings_text2" format="reference|color">
+    </attr>
+    <attr name="color_text_review" format="reference|color">
+    </attr>
+    <attr name="color_welcome_text" format="reference|color">
+    </attr>
+    <attr name="color_comment_text" format="reference|color">
+    </attr>
+    <attr name="color_friend_text2" format="reference|color">
+    </attr>
+    <attr name="color_settings_bg2" format="reference|color">
+    </attr>
+    <attr name="color_settings_bg_pressed" format="reference|color">
+    </attr>
+    <attr name="color_button_text_mediabar_pressed" format="reference|color">
+    </attr>
+    <attr name="color_alarm_bg" format="reference|color">
+    </attr>
+    <attr name="color_card_bg2" format="reference|color">
+    </attr>
+    <attr name="color_friend_bg" format="reference|color">
+    </attr>
+    <attr name="color_friend_search" format="reference|color">
+    </attr>
+    <attr name="color_main_window_bg" format="reference|color">
+    </attr>
+    <attr name="color_window_bg" format="reference|color">
+    </attr>
+    <attr name="color_friend_feed1" format="reference|color">
+    </attr>
+    <attr name="color_friend_feed2" format="reference|color">
+    </attr>
+    <attr name="color_common_white" format="reference|color">
+    </attr>
+    <attr name="color_settings_bg" format="reference|color">
+    </attr>
+    <attr name="color_welcome_bg" format="reference|color">
+    </attr>
+    <attr name="color_comment_input" format="reference|color">
+    </attr>
+    <attr name="color_fm_disabled" format="reference|color">
+    </attr>
+    <attr name="color_progress_bg" format="reference|color">
+    </attr>
+    <attr name="color_progress_text" format="reference|color">
+    </attr>
+    <attr name="color_settings_alarm" format="reference|color">
+    </attr>
+    <attr name="color_line_settings" format="reference|color">
+    </attr>
+    <attr name="color_type_text" format="reference|color">
+    </attr>
+    <attr name="color_welcome_bg2" format="reference|color">
+    </attr>
+    <attr name="color_checkin_text" format="reference|color">
+    </attr>
+    <attr name="color_common_black" format="reference|color">
+    </attr>
+    <attr name="color_settings_text" format="reference|color">
+    </attr>
+    <attr name="color_bar_bottom" format="reference|color">
+    </attr>
+    <attr name="color_main_text1" format="reference|color">
+    </attr>
+    <attr name="color_button_wechat_login" format="reference|color">
+    </attr>
+    <attr name="color_button_mail_login" format="reference|color">
+    </attr>
+    <attr name="color_wiki_highlight" format="reference|color">
+    </attr>
+    <attr name="color_common_black_80" format="reference|color">
+    </attr>
+    <attr name="color_common_bg_cc" format="reference|color">
+    </attr>
+    <attr name="color_button_tvfm" format="reference|color">
+    </attr>
+    <attr name="color_friend_line" format="reference|color">
+    </attr>
+    <attr name="color_line_fm" format="reference|color">
+    </attr>
+    <attr name="color_line2" format="reference|color">
+    </attr>
+    <attr name="color_page" format="reference|color">
+    </attr>
+    <attr name="color_plan_bg2" format="reference|color">
+    </attr>
+    <attr name="color_line_wiki" format="reference|color">
+    </attr>
+    <attr name="color_line_bar" format="reference|color">
+    </attr>
+    <attr name="color_line_test3" format="reference|color">
+    </attr>
+    <attr name="color_voice_bg" format="reference|color">
+    </attr>
+    <attr name="color_wiki_bg2" format="reference|color">
+    </attr>
+    <attr name="color_window_outline" format="reference|color">
+    </attr>
+    <attr name="color_alarm_text" format="reference|color">
+    </attr>
+    <attr name="color_alarm_text2" format="reference|color">
+    </attr>
+    <attr name="color_bar_text" format="reference|color">
+    </attr>
+    <attr name="color_button_oval" format="reference|color">
+    </attr>
+    <attr name="color_button_text" format="reference|color">
+    </attr>
+    <attr name="color_button_tvfm_text" format="reference|color">
+    </attr>
+    <attr name="color_currentpage" format="reference|color">
+    </attr>
+    <attr name="color_friend_text4" format="reference|color">
+    </attr>
+    <attr name="color_main_text2" format="reference|color">
+    </attr>
+    <attr name="color_plan_date_bg" format="reference|color">
+    </attr>
+    <attr name="color_wiki_bg" format="reference|color">
+    </attr>
+    <attr name="color_message_titletexticon" format="reference|color">
+    </attr>
+    <attr name="color_message_head" format="reference|color">
+    </attr>
+    <attr name="color_message_bg" format="reference|color">
+    </attr>
+    <attr name="color_message_line" format="reference|color">
+    </attr>
+    <attr name="color_message_title" format="reference|color">
+    </attr>
+    <attr name="color_message_subtitle" format="reference|color">
+    </attr>
+    <attr name="color_message_read" format="reference|color">
+    </attr>
+    <attr name="color_message_shareblack" format="reference|color">
+    </attr>
+    <attr name="color_message_sharebg" format="reference|color">
+    </attr>
+    <attr name="color_message_sharetext" format="reference|color">
+    </attr>
+    <attr name="color_message_cancelbutton" format="reference|color">
+    </attr>
+    <attr name="color_message_cancel" format="reference|color">
+    </attr>
+    <attr name="color_message_shareline" format="reference|color">
+    </attr>
+    <attr name="color_message_press" format="reference|color">
+    </attr>
+    <attr name="color_bg_mask" format="reference|color">
+    </attr>
+    <attr name="color_blue_btn" format="reference|color">
+    </attr>
+    <attr name="color_blue_btn_pressed" format="reference|color">
+    </attr>
+    <attr name="color_text_read" format="reference|color">
+    </attr>
+    <attr name="color_text_unread" format="reference|color">
+    </attr>
+    <attr name="color_trans_grey_g1" format="reference|color">
+    </attr>
+    <attr name="color_trans_grey_g2" format="reference|color">
+    </attr>
+    <attr name="color_common_grey" format="reference|color">
+    </attr>
+    <attr name="color_type_box" format="reference|color">
+    </attr>
+    <attr name="color_type_box_pressed" format="reference|color">
+    </attr>
+    <attr name="color_common_dark_grey" format="reference|color">
+    </attr>
+    <attr name="color_trans_dark_g1" format="reference|color">
+    </attr>
+    <attr name="drawable_fm_title" format="reference">
+    </attr>
+    <attr name="drawable_bg_text" format="reference">
+    </attr>
+    <attr name="drawable_progress_err_right" format="reference">
+    </attr>
+    <attr name="drawable_share_circleoffriends" format="reference">
+    </attr>
+    <attr name="drawable_android_plan_minus" format="reference">
+    </attr>
+    <attr name="drawable_pause" format="reference">
+    </attr>
+    <attr name="drawable_delete_plan" format="reference">
+    </attr>
+    <attr name="drawable_list" format="reference">
+    </attr>
+    <attr name="drawable_thinking" format="reference">
+    </attr>
+    <attr name="drawable_checkplay" format="reference">
+    </attr>
+    <attr name="drawable_mail" format="reference">
+    </attr>
+    <attr name="drawable_wiki_sound" format="reference">
+    </attr>
+    <attr name="drawable_progress_ok_left" format="reference">
+    </attr>
+    <attr name="drawable_sound" format="reference">
+    </attr>
+    <attr name="drawable_test" format="reference">
+    </attr>
+    <attr name="drawable_du" format="reference">
+    </attr>
+    <attr name="drawable_progress_bg_left" format="reference">
+    </attr>
+    <attr name="drawable_add_friend" format="reference">
+    </attr>
+    <attr name="drawable_download_update" format="reference">
+    </attr>
+    <attr name="drawable_speak_word" format="reference">
+    </attr>
+    <attr name="drawable_bind_mail" format="reference">
+    </attr>
+    <attr name="drawable_back" format="reference">
+    </attr>
+    <attr name="drawable_download" format="reference">
+    </attr>
+    <attr name="drawable_close" format="reference">
+    </attr>
+    <attr name="drawable_tmall" format="reference">
+    </attr>
+    <attr name="drawable_main_study_new_message" format="reference">
+    </attr>
+    <attr name="drawable_speak_word1" format="reference">
+    </attr>
+    <attr name="drawable_speak_word2" format="reference">
+    </attr>
+    <attr name="drawable_wiki_sound2" format="reference">
+    </attr>
+    <attr name="drawable_review" format="reference">
+    </attr>
+    <attr name="drawable_study_button" format="reference">
+    </attr>
+    <attr name="drawable_pei" format="reference">
+    </attr>
+    <attr name="drawable_wiki_play" format="reference">
+    </attr>
+    <attr name="drawable_renren" format="reference">
+    </attr>
+    <attr name="drawable_progress_stop" format="reference">
+    </attr>
+    <attr name="drawable_android_wordlist_loading" format="reference">
+    </attr>
+    <attr name="drawable_speak_se2" format="reference">
+    </attr>
+    <attr name="drawable_key" format="reference">
+    </attr>
+    <attr name="drawable_speak_se1" format="reference">
+    </attr>
+    <attr name="drawable_progress_err_center" format="reference">
+    </attr>
+    <attr name="drawable_wiki_share" format="reference">
+    </attr>
+    <attr name="drawable_mic_on" format="reference">
+    </attr>
+    <attr name="drawable_store" format="reference">
+    </attr>
+    <attr name="drawable_button_test3" format="reference">
+    </attr>
+    <attr name="drawable_mic_off" format="reference">
+    </attr>
+    <attr name="drawable_baofm" format="reference">
+    </attr>
+    <attr name="drawable_progress_bg_center" format="reference">
+    </attr>
+    <attr name="drawable_main_study_message" format="reference">
+    </attr>
+    <attr name="drawable_wechat" format="reference">
+    </attr>
+    <attr name="drawable_syncview_error" format="reference">
+    </attr>
+    <attr name="drawable_syncview_update" format="reference">
+    </attr>
+    <attr name="drawable_download_to_pause" format="reference">
+    </attr>
+    <attr name="drawable_progress_bg_right" format="reference">
+    </attr>
+    <attr name="drawable_message_favorite" format="reference">
+    </attr>
+    <attr name="drawable_unslash" format="reference">
+    </attr>
+    <attr name="drawable_progress_err_left" format="reference">
+    </attr>
+    <attr name="drawable_bind_weibo" format="reference">
+    </attr>
+    <attr name="drawable_reset_plan" format="reference">
+    </attr>
+    <attr name="drawable_question" format="reference">
+    </attr>
+    <attr name="drawable_ting" format="reference">
+    </attr>
+    <attr name="drawable_button_line" format="reference">
+    </attr>
+    <attr name="drawable_baotv" format="reference">
+    </attr>
+    <attr name="drawable_friend" format="reference">
+    </attr>
+    <attr name="drawable_listen" format="reference">
+    </attr>
+    <attr name="drawable_topic_top_bg" format="reference">
+    </attr>
+    <attr name="drawable_message_back" format="reference">
+    </attr>
+    <attr name="drawable_mask_wordlist" format="reference">
+    </attr>
+    <attr name="drawable_share_weixin" format="reference">
+    </attr>
+    <attr name="drawable_pk" format="reference">
+    </attr>
+    <attr name="drawable_sound1" format="reference">
+    </attr>
+    <attr name="drawable_bg_fm_card" format="reference">
+    </attr>
+    <attr name="drawable_sound2" format="reference">
+    </attr>
+    <attr name="drawable_me" format="reference">
+    </attr>
+    <attr name="drawable_button_oval" format="reference">
+    </attr>
+    <attr name="drawable_syncview" format="reference">
+    </attr>
+    <attr name="drawable_checkplay_checked" format="reference">
+    </attr>
+    <attr name="drawable_progress_check" format="reference">
+    </attr>
+    <attr name="drawable_fm_button" format="reference">
+    </attr>
+    <attr name="drawable_progress_ok_right" format="reference">
+    </attr>
+    <attr name="drawable_progress_ok_center" format="reference">
+    </attr>
+    <attr name="drawable_newmessage" format="reference">
+    </attr>
+    <attr name="drawable_pin" format="reference">
+    </attr>
+    <attr name="drawable_share" format="reference">
+    </attr>
+    <attr name="drawable_line_wiki" format="reference">
+    </attr>
+    <attr name="drawable_home" format="reference">
+    </attr>
+    <attr name="drawable_search3" format="reference">
+    </attr>
+    <attr name="drawable_search2" format="reference">
+    </attr>
+    <attr name="drawable_line_default" format="reference">
+    </attr>
+    <attr name="drawable_android_plan_plus" format="reference">
+    </attr>
+    <attr name="drawable_review_button" format="reference">
+    </attr>
+    <attr name="drawable_switch_tri" format="reference">
+    </attr>
+    <attr name="drawable_bind_wechat" format="reference">
+    </attr>
+    <attr name="drawable_share_weibo" format="reference">
+    </attr>
+    <attr name="drawable_button_lismore" format="reference">
+    </attr>
+    <attr name="drawable_wiki_play_video" format="reference">
+    </attr>
+    <attr name="drawable_right_arrow" format="reference">
+    </attr>
+    <attr name="drawable_drag_bar" format="reference">
+    </attr>
+    <attr name="drawable_weibo" format="reference">
+    </attr>
+    <attr name="drawable_download_resume" format="reference">
+    </attr>
+    <attr name="drawable_feedback_addpicture" format="reference">
+    </attr>
+    <attr name="drawable_wiki_trans" format="reference">
+    </attr>
+    <attr name="drawable_button_circular" format="reference">
+    </attr>
+    <attr name="drawable_speak_se" format="reference">
+    </attr>
+    <attr name="drawable_wiki_sound1" format="reference">
+    </attr>
+    <attr name="drawable_download_complete" format="reference">
+    </attr>
+    <attr name="animation_speak_word" format="reference">
+    </attr>
+    <attr name="animation_speak_se" format="reference">
+    </attr>
+    <attr name="animation_sound" format="reference">
+    </attr>
+    <attr name="animation_wiki_sound" format="reference">
+    </attr>
+    <attr name="tileSize" format="integer">
+    </attr>
+    <attr name="radius_wordradio" format="dimension">
+    </attr>
+    <attr name="strokeWidth_wordradio" format="dimension">
+    </attr>
+    <attr name="circleColor_wordradio" format="color">
+    </attr>
+    <attr name="ringColor_wordradio" format="color">
+    </attr>
+    <attr name="_mode">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="_viewAbove" format="reference">
+    </attr>
+    <attr name="_viewBehind" format="reference">
+    </attr>
+    <attr name="_behindOffset" format="dimension">
+    </attr>
+    <attr name="_behindWidth" format="dimension">
+    </attr>
+    <attr name="_behindScrollScale" format="float">
+    </attr>
+    <attr name="_touchModeAbove">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="_touchModeBehind">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="_shadowDrawable" format="reference">
+    </attr>
+    <attr name="_shadowWidth" format="dimension">
+    </attr>
+    <attr name="_fadeEnabled" format="boolean">
+    </attr>
+    <attr name="_fadeDegree" format="float">
+    </attr>
+    <attr name="_selectorEnabled" format="boolean">
+    </attr>
+    <attr name="_selectorDrawable" format="reference">
+    </attr>
+    <attr name="src" format="integer">
+    </attr>
+    <attr name="delay" format="integer">
+    </attr>
+    <attr name="stop" format="boolean">
+    </attr>
+</resources>

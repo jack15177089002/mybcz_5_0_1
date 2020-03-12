@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/wordlist_wiki_all" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/wordlist_wiki_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/advertisement_layout"/>
+</FrameLayout>

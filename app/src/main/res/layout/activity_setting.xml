@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="?attr/color_common_bar" android:layout_width="match_parent" android:layout_height="35dp">
+        <ImageView android:id="@+id/back" android:paddingLeft="20dp" android:paddingTop="7.5dp" android:paddingRight="8dp" android:paddingBottom="7.5dp" android:layout_width="48dp" android:layout_height="match_parent" android:src="?attr/drawable_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:gravity="center" android:id="@+id/notice_setting" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="设置" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/settings" android:background="?attr/color_common_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="?attr/color_line2" android:dividerHeight="1px"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="?attr/color_common_bar" android:layout_width="match_parent" android:layout_height="35dp">
+        <ImageView android:id="@+id/back" android:paddingLeft="20dp" android:paddingTop="7.5dp" android:paddingRight="8dp" android:paddingBottom="7.5dp" android:layout_width="48dp" android:layout_height="match_parent" android:src="?attr/drawable_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_button_text" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建新计划" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/book_category_navigators" android:background="?attr/color_blue_btn" android:layout_width="115dp" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="#ffffffff" android:dividerHeight="1px"/>
+        <ListView android:id="@+id/book_categories" android:background="?attr/color_common_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="100dp" android:listSelector="#00000000" android:divider="#00000000"/>
+    </FrameLayout>
+</LinearLayout>

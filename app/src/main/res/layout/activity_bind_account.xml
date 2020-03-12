@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/color_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/back" android:paddingLeft="20dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="48dp" android:layout_height="32dp" android:src="?attr/drawable_back"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/card" android:layout_width="409dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/T2" android:textColor="?attr/color_button_text" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:text="@string/main_bind_account_title"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:id="@+id/bind_email" android:layout_width="70.5dp" android:layout_height="91.5dp" android:src="?attr/drawable_bind_mail" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/bind_weibo" android:layout_width="70.5dp" android:layout_height="91.5dp" android:layout_marginLeft="35dp" android:layout_marginRight="35dp" android:src="?attr/drawable_bind_weibo" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/bind_weixin" android:layout_width="70.5dp" android:layout_height="91.5dp" android:src="?attr/drawable_bind_wechat" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <View android:background="?attr/color_line2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+            <ImageView android:id="@+id/user_image" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/bao_normal_default" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/app_name"/>
+            <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_button_oval" android:id="@+id/user_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/user_image" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_button_oval" android:gravity="center" android:id="@+id/logout" android:background="?attr/drawable_button_line" android:layout_width="100dp" android:layout_height="30dp" android:text="退出试用" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

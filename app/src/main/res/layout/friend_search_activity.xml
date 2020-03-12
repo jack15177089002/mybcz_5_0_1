@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/header" android:background="@color/business_dc3" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/friend_facet_header_height">
+        <ImageView android:id="@+id/back" android:background="@drawable/friend_nnull_pdc2_snull" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/friend_back" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <LinearLayout android:id="@+id/search_frame" android:layout_width="345dp" android:layout_height="32dp" android:layout_centerInParent="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_small_lens" android:padding="4dp" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginLeft="4dp" android:layout_marginRight="3dp" android:src="@drawable/friend_search_manifying_lens" android:scaleType="fitXY"/>
+            <EditText android:textSize="@dimen/business_fs3" android:textColor="@color/business_dt7" android:textColorHint="@color/business_dt5" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/search_box" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/friend_search_hint" android:maxLines="1" android:inputType="text" android:imeOptions="flagNoExtractUi"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/business_fs4" android:textColor="@color/business_dc8" android:gravity="center" android:id="@+id/search_button" android:background="@drawable/friend_nnull_pdc2_snull" android:layout_width="75dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/friend_operation_search" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragment_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/friend_system_suggestion"/>
+        <include layout="@layout/friend_search_entry"/>
+    </FrameLayout>
+</LinearLayout>

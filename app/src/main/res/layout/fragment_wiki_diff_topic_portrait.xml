@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/T7" android:textColor="?attr/color_text_review" android:id="@+id/topic_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="childhood" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_text_review" android:id="@+id/topic_phonetic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="[thaildhood]" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_text_review" android:id="@+id/topic_mean_cn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="n.童年\10n.童年" android:maxLines="2"/>
+    <TextView android:textSize="@dimen/T3" android:textColor="?attr/color_text_review" android:id="@+id/topic_sentence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="Mychildhood was a happy"/>
+</LinearLayout>
